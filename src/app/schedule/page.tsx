@@ -315,15 +315,6 @@ export default function SchedulePage() {
               </form>
             </CardContent>
           </Card>
-
-          <div className="text-center mt-8">
-            <Link href="/">
-              <Button variant="outline" size="lg">
-                <Home className="mr-2 h-5 w-5" />
-                {t('backToHome')}
-              </Button>
-            </Link>
-          </div>
         </div>
       </main>
     </div>
