@@ -1,0 +1,40 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator clientDmsByIvinDev {
+  provider = "prisma-client-js"
+  output   = "../generated/client-dms-by-ivin-dev"
+}
+
+datasource dbDmsByIvinDev {
+  provider = "postgresql"
+  url      = env("DMS_BY_IVIN_DEV_DATABASE_URL")
+}
+
+model SystemPurchase {
+  id                   String                @id @default(cuid())
+  stripeSessionId      String                @unique
+  stripePaymentId      String?
+  amount               Float
+  currency             String?
+  customerId           String?
+  customerName         String?
+  customerEmail        String?
+  customerPhone        String?
+  customerBusinessName String?
+  customerCountry      String?
+  customerState        String?
+  customerCity         String?
+  status               SystemPurchaseStatus? @default(unassigned)
+  receiptUrl           String?
+  isActive             Boolean               @default(true)
+  createdAt            DateTime              @default(now())
+  updatedAt            DateTime              @updatedAt
+}
+
+enum SystemPurchaseStatus {
+  complete
+  expired
+  open
+  unassigned
+}
