@@ -53,7 +53,7 @@ package-lock.json
 
 # DB
 # prisma/dev.db
-prisma/generated
+# prisma/generated
 
 # Ref
 ref/

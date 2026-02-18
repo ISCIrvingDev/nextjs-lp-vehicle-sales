@@ -38,3 +38,23 @@ enum SystemPurchaseStatus {
   open
   unassigned
 }
+
+// Agregado el 2026/02/17
+model ScheduleDate {
+  id String @id @default(cuid())
+
+  companyName    String
+  companyAddress String
+  firtName       String
+  lastName       String
+  email          String
+  phoneNumber    String
+  state          String
+  city           String
+  zip            String
+  message        String?
+
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
