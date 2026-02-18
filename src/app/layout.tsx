@@ -60,7 +60,7 @@ export default function RootLayout({
 
       {
         process.env.NODE_ENV === 'production' && // Comentar esta linea en "development" para pruebas con "Vista previa" de "Google Tag Manager"
-        process.env.NEXT_PUBLIC_IS_DEMO === 'true' && process.env.IS_DESKTOP === 'false' && process.env.GOOGLE_TAG_MANAGER_ID && <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID} />
+        process.env.GOOGLE_TAG_MANAGER_ID && <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID} />
       }
     </html>
   );
