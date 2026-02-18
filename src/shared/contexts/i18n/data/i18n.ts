@@ -8,6 +8,7 @@ import { i18nDashboard } from "./dashboard";
 import { i18nEarningsReports } from "./earnings-reports";
 import { i18nFaqs } from "./faqs";
 import { i18nFooter } from "./footer";
+import { i18nHome } from "./home";
 import { i18nInventory } from "./inventory";
 import { i18nLandingPage } from "./landing-page";
 import { i18nLayaways } from "./layaways";
@@ -53,6 +54,9 @@ export const translations = {
 
     // Schedule -> Agregado el 2026-02-18
     ...i18nSchedule.en,
+
+    // Schedule -> Agregado el 2026-02-18
+    ...i18nHome.en,
 
     // Navigation
     ...i18nNavigation.en,
@@ -123,6 +127,9 @@ export const translations = {
 
     // Schedule -> Agregado el 2026-02-18
     ...i18nSchedule.es,
+
+    // Schedule -> Agregado el 2026-02-18
+    ...i18nHome.es,
 
     // Navigation
     ...i18nNavigation.es,

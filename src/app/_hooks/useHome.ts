@@ -39,11 +39,9 @@ import { sendGTMEvent } from "@next/third-parties/google";
 
 export function useHome() {
   const { t } = useI18n();
-  const { user } = useAuth();
 
   return {
     t,
-    user,
     sendGTMEvent,
   };
 }

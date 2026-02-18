@@ -19,7 +19,6 @@ import { useHome } from './_hooks/useHome';
 export default function Home() {
   const {
     t,
-    user,
     sendGTMEvent,
   } = useHome()
 
@@ -36,30 +35,13 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
 
-            {user ? (
-              <Link href="/dashboard">
-                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  {t('dashboard')}
-                </Button>
+            <div className="flex gap-2">
+              <Link href="/schedule" onClick={() => {
+                sendGTMEvent({ event: '/ - Header - Schedule a Demo', cta_type: 'Btn' })
+              }}>
+                <Button>{t('scheduleDemo')}</Button>
               </Link>
-            ) : (
-              <div className="flex gap-2">
-                <Link href="/signin" onClick={() => {
-                  if (process.env.NEXT_PUBLIC_IS_DEMO === 'true')
-                    sendGTMEvent({ event: '/ - Header - Sign In', cta_type: 'Btn' })
-                }}>
-                  <Button variant="outline">{t('signIn')}</Button>
-                </Link>
-                <Link href="/signup" onClick={() => {
-                  if (process.env.NEXT_PUBLIC_IS_DEMO === 'true')
-                    sendGTMEvent({ event: '/ - Header - Sign Up', cta_type: 'Btn' })
-                }}>
-                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                    {t('signUp')}
-                  </Button>
-                </Link>
-              </div>
-            )}
+            </div>
           </div>
         </div>
       </header>
@@ -80,15 +62,6 @@ export default function Home() {
             }}>
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8">
                 {t('landingPageText2')} <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-
-            <Link href="/signin" onClick={() => {
-              if (process.env.NEXT_PUBLIC_IS_DEMO === 'true')
-                sendGTMEvent({ event: '/ - Welcome to Vehicle Sales - Sign In', cta_type: 'Btn' })
-            }}>
-              <Button size="lg" variant="outline" className="border-border">
-                {t('signIn')}
               </Button>
             </Link>
           </div>
