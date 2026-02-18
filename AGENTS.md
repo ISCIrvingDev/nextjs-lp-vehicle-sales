@@ -73,11 +73,11 @@ Each dashboard module follows this structure:
 
 ```
 src/app/(dashboard)/module-name/
-├── page.tsx                    # Main component (presentation layer)
+├── page.tsx                   # View: Main component (presentation layer)
 ├── _hooks/
-│   ├── useModule.ts           # Custom hook (logic layer)
+│   ├── useModule.ts           # ViewModel: Custom hook (logic layer)
 │   └── _models/
-│       └── module.ts          # TypeScript interfaces (model layer)
+│       └── module.ts          # Model: TypeScript interfaces (model layer)
 ```
 
 ### Naming Conventions
@@ -212,7 +212,7 @@ Note: Linting may not catch all issues. Be thorough in code review.
 
 ### Prisma/Database
 
-- Schema in `prisma/schema.prisma`
+- Schema in `prisma\db-dms-by-ivin-dev\schema.prisma`
 - Generate client after schema changes: `npm run db:generate`
 - Push changes to dev database: `npm run db:push`
 - Use SQLite provider
