@@ -234,6 +234,104 @@ Note: Linting may not catch all issues. Be thorough in code review.
 - Commit messages: concise, descriptive
 - Always run `npm run lint` before committing
 
+## API Routes Structure
+
+Internal API routes using Next.js App Router (Route Handlers).
+
+### Directory Structure (MCS Pattern)
+
+MCS stands for Model-Controller-Service
+Each API module follows this structure:
+
+```
+src/app/api/
+├── module-name-a/
+│   ├── route.ts                      # Controller: /api/module-name-a
+│   └── service.ts                    # Service: Business logic (the Model is called within the service)
+└── module-name-b/
+    ├── route.ts                      # Controller: /api/module-name-b
+    ├── service.ts                    # Service: Business logic (the Model is called within the service)
+    └── [id]/                         # Routes with params
+        ├── route.ts                  # Controller: /api/module-name-b/[id]
+        └── service.ts                # Service: Business logic (the Model is called within the service)
+```
+
+### Endpoints
+
+| Method | Endpoint                              | Description                                           |
+| ------ | ------------------------------------- | ----------------------------------------------------- |
+| GET    | `/api`                                | Health check - returns `{ message: "Hello, world!" }` |
+| POST   | `/api/stripe`                         | Creates a Stripe checkout session, returns `{ url }`  |
+| GET    | `/api/payment-recorded?sessionId=xxx` | Records/verifies payment from Stripe session          |
+
+### Code Conventions
+
+Each API module follows this pattern:
+
+```
+src/app/api/{module}/
+├── route.ts      # HTTP handlers (GET, POST, PUT, DELETE)
+└── service.ts    # Business logic functions
+```
+
+**route.ts** - Handles HTTP request/response:
+
+```typescript
+// * NextJS (Library)
+import { NextRequest, NextResponse } from "next/server";
+
+// * Services (Internal service)
+import { upsertPurchase } from "./service";
+
+export async function GET(request: NextRequest) {
+  // Handle request...
+}
+```
+
+**service.ts** - Contains business logic:
+
+```typescript
+// * NextJS (Library)
+import { NextResponse } from "next/server";
+
+// * Repositories (Database)
+import { dbDmsByIvinDev } from "@/shared/lib/db-dms-by-ivin-dev";
+
+// * External Libraries
+import { stripe } from "@/shared/lib/stripe";
+import Stripe from "stripe";
+
+export async function upsertPurchase(sessionId: string) {
+  // Business logic...
+}
+```
+
+### Import Categories for API Routes
+
+When adding imports to API route files, organize them with these comments:
+
+- `// * NextJS (Library)` - Next.js server utilities
+- `// * Services (Internal service)` - Local service functions from `./service`
+- `// * Repositories (Database)` - Prisma clients or database access
+- `// * External Libraries` - Third-party packages (Stripe, etc.)
+
+### API: Error Handling
+
+```typescript
+export async function POST() {
+  try {
+    const data = await someService();
+    return NextResponse.json({ data });
+  } catch (error: any) {
+    console.error("POST - /api/endpoint: ", error);
+    return NextResponse.json(
+      { error: error.message },
+      { status: error.statusCode || 500 },
+    );
+  }
+}
+```
+
 ## Notes for Agents
 
 - This is a Next.js 16 project with App Router

@@ -1,37 +1,23 @@
+// * NextJS
 import { NextResponse } from "next/server";
-import { headers } from "next/headers";
 
-// import { stripe } from '../../../lib/stripe'
-import { stripe } from "@/shared/lib/stripe";
+// * Services
+import { createCheckoutSession } from "./service";
 
 export async function POST() {
   try {
-    const headersList = await headers();
-    const origin = headersList.get("origin");
+    const data = await createCheckoutSession();
 
-    // Create Checkout Sessions from body params.
-    const session = await stripe.checkout.sessions.create({
-      line_items: [
-        {
-          // Provide the exact Price ID (for example, price_1234) of the product you want to sell
-          price: "price_1SupoePPy8oJFJQl1fNmeGDb",
-          quantity: 1,
-        },
-      ],
-      mode: "payment",
-      // cancel_url: `${origin}/payment-canceled/{CHECKOUT_SESSION_ID}`,
-      success_url: `${origin}/payment-recorded/{CHECKOUT_SESSION_ID}`, // {CHECKOUT_SESSION_ID}: Es una variable especial (un marcador de posición o placeholder) que Stripe reemplaza automáticamente por el ID único de la sesión real una vez que el cliente completa el pago y es redirigido a tu página de éxito (success_url).
-      automatic_tax: { enabled: true },
-    });
-
-    const url = session.url || "";
+    const url = data.url || "";
 
     // return NextResponse.redirect(url, 303);
     return NextResponse.json({ url });
-  } catch (err: any) {
+  } catch (error: any) {
+    console.error("POST - /api/stripe: ", error);
+
     return NextResponse.json(
-      { error: err.message },
-      { status: err.statusCode || 500 },
+      { error: error.message },
+      { status: error.statusCode || 500 },
     );
   }
 }
