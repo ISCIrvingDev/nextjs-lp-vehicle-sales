@@ -52,6 +52,9 @@ export function useSchedule() {
     } else if (phoneDigits.length < 7) {
       newErrors.phoneNumber = t("invalidPhone");
     }
+    if (!formData.country.trim()) {
+      newErrors.country = t("requiredField");
+    }
     if (!formData.state.trim()) {
       newErrors.state = t("requiredField");
     }
@@ -85,6 +88,7 @@ export function useSchedule() {
         lastName: formData.lastName.trim(),
         email: formData.email.trim(),
         phoneNumber: fullPhoneNumber,
+        country: formData.country.trim(),
         state: formData.state.trim(),
         city: formData.city.trim(),
         zip: formData.zip.trim(),

@@ -21,6 +21,8 @@ export const i18nSchedule = {
     selectCountryCode: "Select code",
 
     location: "Location",
+    country: "Country",
+    countryPlaceholder: "Enter your country",
     state: "State",
     statePlaceholder: "Enter your state",
     city: "City",
@@ -68,6 +70,8 @@ export const i18nSchedule = {
     selectCountryCode: "Seleccionar código",
 
     location: "Ubicación",
+    country: "País",
+    countryPlaceholder: "Ingresa tu país",
     state: "Estado",
     statePlaceholder: "Ingresa tu estado",
     city: "Ciudad",

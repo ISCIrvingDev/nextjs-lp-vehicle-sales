@@ -6,6 +6,7 @@ export type ScheduleFormData = {
   email: string;
   phoneCode: string;
   phoneNumber: string;
+  country: string;
   state: string;
   city: string;
   zip: string;
@@ -19,6 +20,7 @@ export type ScheduleFormErrors = {
   lastName?: string;
   email?: string;
   phoneNumber?: string;
+  country?: string;
   state?: string;
   city?: string;
   zip?: string;
@@ -32,6 +34,7 @@ export const initialFormData: ScheduleFormData = {
   email: "",
   phoneCode: "+52",
   phoneNumber: "",
+  country: "",
   state: "",
   city: "",
   zip: "",

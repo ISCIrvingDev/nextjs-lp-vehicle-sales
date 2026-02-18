@@ -6,6 +6,7 @@ export type ScheduleDate = {
   lastName: string;
   email: string;
   phoneNumber: string;
+  country: string;
   state: string;
   city: string;
   zip: string;
@@ -22,6 +23,7 @@ export type ScheduleDateInput = {
   lastName: string;
   email: string;
   phoneNumber: string;
+  country: string;
   state: string;
   city: string;
   zip: string;

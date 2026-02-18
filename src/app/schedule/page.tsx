@@ -195,7 +195,7 @@ export default function SchedulePage() {
                           <SelectContent>
                             {countryPhoneCodes.map((country) => (
                               <SelectItem key={country.country} value={country.code}>
-                                {country.code} {country.name}
+                                {country.code} {country.country}
                               </SelectItem>
                             ))}
                           </SelectContent>
@@ -220,7 +220,23 @@ export default function SchedulePage() {
                   <h3 className="text-lg font-semibold text-foreground mb-4">
                     {t('location')}
                   </h3>
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="state" className="text-foreground">
+                        {t('country')} <span className="text-red-500">*</span>
+                      </Label>
+                      <Input
+                        id="country"
+                        placeholder={t('countryPlaceholder')}
+                        value={formData.country}
+                        onChange={(e) => handleInputChange('country', e.target.value)}
+                        className={`bg-input border-border ${errors.state ? 'border-red-500' : ''}`}
+                      />
+                      {errors.state && (
+                        <p className="text-red-500 text-sm">{errors.state}</p>
+                      )}
+                    </div>
+
                     <div className="space-y-2">
                       <Label htmlFor="state" className="text-foreground">
                         {t('state')} <span className="text-red-500">*</span>
@@ -252,9 +268,7 @@ export default function SchedulePage() {
                         <p className="text-red-500 text-sm">{errors.city}</p>
                       )}
                     </div>
-                  </div>
 
-                  <div className="grid gap-4 mt-4">
                     <div className="space-y-2">
                       <Label htmlFor="zip" className="text-foreground">
                         {t('zipCode')} <span className="text-red-500">*</span>
