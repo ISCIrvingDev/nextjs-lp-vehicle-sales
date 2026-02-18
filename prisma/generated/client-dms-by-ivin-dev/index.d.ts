@@ -2187,6 +2187,7 @@ export namespace Prisma {
     lastName: string | null
     email: string | null
     phoneNumber: string | null
+    country: string | null
     state: string | null
     city: string | null
     zip: string | null
@@ -2204,6 +2205,7 @@ export namespace Prisma {
     lastName: string | null
     email: string | null
     phoneNumber: string | null
+    country: string | null
     state: string | null
     city: string | null
     zip: string | null
@@ -2221,6 +2223,7 @@ export namespace Prisma {
     lastName: number
     email: number
     phoneNumber: number
+    country: number
     state: number
     city: number
     zip: number
@@ -2240,6 +2243,7 @@ export namespace Prisma {
     lastName?: true
     email?: true
     phoneNumber?: true
+    country?: true
     state?: true
     city?: true
     zip?: true
@@ -2257,6 +2261,7 @@ export namespace Prisma {
     lastName?: true
     email?: true
     phoneNumber?: true
+    country?: true
     state?: true
     city?: true
     zip?: true
@@ -2274,6 +2279,7 @@ export namespace Prisma {
     lastName?: true
     email?: true
     phoneNumber?: true
+    country?: true
     state?: true
     city?: true
     zip?: true
@@ -2364,6 +2370,7 @@ export namespace Prisma {
     lastName: string
     email: string
     phoneNumber: string
+    country: string
     state: string
     city: string
     zip: string
@@ -2398,6 +2405,7 @@ export namespace Prisma {
     lastName?: boolean
     email?: boolean
     phoneNumber?: boolean
+    country?: boolean
     state?: boolean
     city?: boolean
     zip?: boolean
@@ -2415,6 +2423,7 @@ export namespace Prisma {
     lastName?: boolean
     email?: boolean
     phoneNumber?: boolean
+    country?: boolean
     state?: boolean
     city?: boolean
     zip?: boolean
@@ -2432,6 +2441,7 @@ export namespace Prisma {
     lastName?: boolean
     email?: boolean
     phoneNumber?: boolean
+    country?: boolean
     state?: boolean
     city?: boolean
     zip?: boolean
@@ -2449,6 +2459,7 @@ export namespace Prisma {
     lastName?: boolean
     email?: boolean
     phoneNumber?: boolean
+    country?: boolean
     state?: boolean
     city?: boolean
     zip?: boolean
@@ -2458,7 +2469,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }
 
-  export type ScheduleDateOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "companyName" | "companyAddress" | "firtName" | "lastName" | "email" | "phoneNumber" | "state" | "city" | "zip" | "message" | "isActive" | "createdAt" | "updatedAt", ExtArgs["result"]["scheduleDate"]>
+  export type ScheduleDateOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "companyName" | "companyAddress" | "firtName" | "lastName" | "email" | "phoneNumber" | "country" | "state" | "city" | "zip" | "message" | "isActive" | "createdAt" | "updatedAt", ExtArgs["result"]["scheduleDate"]>
 
   export type $ScheduleDatePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "ScheduleDate"
@@ -2471,6 +2482,7 @@ export namespace Prisma {
       lastName: string
       email: string
       phoneNumber: string
+      country: string
       state: string
       city: string
       zip: string
@@ -2908,6 +2920,7 @@ export namespace Prisma {
     readonly lastName: FieldRef<"ScheduleDate", 'String'>
     readonly email: FieldRef<"ScheduleDate", 'String'>
     readonly phoneNumber: FieldRef<"ScheduleDate", 'String'>
+    readonly country: FieldRef<"ScheduleDate", 'String'>
     readonly state: FieldRef<"ScheduleDate", 'String'>
     readonly city: FieldRef<"ScheduleDate", 'String'>
     readonly zip: FieldRef<"ScheduleDate", 'String'>
@@ -3327,6 +3340,7 @@ export namespace Prisma {
     lastName: 'lastName',
     email: 'email',
     phoneNumber: 'phoneNumber',
+    country: 'country',
     state: 'state',
     city: 'city',
     zip: 'zip',
@@ -3578,6 +3592,7 @@ export namespace Prisma {
     lastName?: StringFilter<"ScheduleDate"> | string
     email?: StringFilter<"ScheduleDate"> | string
     phoneNumber?: StringFilter<"ScheduleDate"> | string
+    country?: StringFilter<"ScheduleDate"> | string
     state?: StringFilter<"ScheduleDate"> | string
     city?: StringFilter<"ScheduleDate"> | string
     zip?: StringFilter<"ScheduleDate"> | string
@@ -3595,6 +3610,7 @@ export namespace Prisma {
     lastName?: SortOrder
     email?: SortOrder
     phoneNumber?: SortOrder
+    country?: SortOrder
     state?: SortOrder
     city?: SortOrder
     zip?: SortOrder
@@ -3615,6 +3631,7 @@ export namespace Prisma {
     lastName?: StringFilter<"ScheduleDate"> | string
     email?: StringFilter<"ScheduleDate"> | string
     phoneNumber?: StringFilter<"ScheduleDate"> | string
+    country?: StringFilter<"ScheduleDate"> | string
     state?: StringFilter<"ScheduleDate"> | string
     city?: StringFilter<"ScheduleDate"> | string
     zip?: StringFilter<"ScheduleDate"> | string
@@ -3632,6 +3649,7 @@ export namespace Prisma {
     lastName?: SortOrder
     email?: SortOrder
     phoneNumber?: SortOrder
+    country?: SortOrder
     state?: SortOrder
     city?: SortOrder
     zip?: SortOrder
@@ -3655,6 +3673,7 @@ export namespace Prisma {
     lastName?: StringWithAggregatesFilter<"ScheduleDate"> | string
     email?: StringWithAggregatesFilter<"ScheduleDate"> | string
     phoneNumber?: StringWithAggregatesFilter<"ScheduleDate"> | string
+    country?: StringWithAggregatesFilter<"ScheduleDate"> | string
     state?: StringWithAggregatesFilter<"ScheduleDate"> | string
     city?: StringWithAggregatesFilter<"ScheduleDate"> | string
     zip?: StringWithAggregatesFilter<"ScheduleDate"> | string
@@ -3819,6 +3838,7 @@ export namespace Prisma {
     lastName: string
     email: string
     phoneNumber: string
+    country: string
     state: string
     city: string
     zip: string
@@ -3836,6 +3856,7 @@ export namespace Prisma {
     lastName: string
     email: string
     phoneNumber: string
+    country: string
     state: string
     city: string
     zip: string
@@ -3853,6 +3874,7 @@ export namespace Prisma {
     lastName?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     phoneNumber?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
     state?: StringFieldUpdateOperationsInput | string
     city?: StringFieldUpdateOperationsInput | string
     zip?: StringFieldUpdateOperationsInput | string
@@ -3870,6 +3892,7 @@ export namespace Prisma {
     lastName?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     phoneNumber?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
     state?: StringFieldUpdateOperationsInput | string
     city?: StringFieldUpdateOperationsInput | string
     zip?: StringFieldUpdateOperationsInput | string
@@ -3887,6 +3910,7 @@ export namespace Prisma {
     lastName: string
     email: string
     phoneNumber: string
+    country: string
     state: string
     city: string
     zip: string
@@ -3904,6 +3928,7 @@ export namespace Prisma {
     lastName?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     phoneNumber?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
     state?: StringFieldUpdateOperationsInput | string
     city?: StringFieldUpdateOperationsInput | string
     zip?: StringFieldUpdateOperationsInput | string
@@ -3921,6 +3946,7 @@ export namespace Prisma {
     lastName?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     phoneNumber?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
     state?: StringFieldUpdateOperationsInput | string
     city?: StringFieldUpdateOperationsInput | string
     zip?: StringFieldUpdateOperationsInput | string
@@ -4162,6 +4188,7 @@ export namespace Prisma {
     lastName?: SortOrder
     email?: SortOrder
     phoneNumber?: SortOrder
+    country?: SortOrder
     state?: SortOrder
     city?: SortOrder
     zip?: SortOrder
@@ -4179,6 +4206,7 @@ export namespace Prisma {
     lastName?: SortOrder
     email?: SortOrder
     phoneNumber?: SortOrder
+    country?: SortOrder
     state?: SortOrder
     city?: SortOrder
     zip?: SortOrder
@@ -4196,6 +4224,7 @@ export namespace Prisma {
     lastName?: SortOrder
     email?: SortOrder
     phoneNumber?: SortOrder
+    country?: SortOrder
     state?: SortOrder
     city?: SortOrder
     zip?: SortOrder

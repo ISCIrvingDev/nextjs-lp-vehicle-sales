@@ -16,6 +16,7 @@ import { i18nPrivacy } from "./privacy";
 import { i18nPurchase } from "./purchase";
 import { i18nRoles } from "./roles";
 import { i18nSales } from "./sales";
+import { i18nSchedule } from "./schedule";
 import { i18nStaticPages } from "./static-pages";
 import { i18nSuppliers } from "./suppliers";
 import { i18nTerms } from "./terms";
@@ -49,6 +50,9 @@ export const translations = {
 
     // Buy DMS -> Agregado el 2026-02-11
     ...i18nBuy.en,
+
+    // Schedule -> Agregado el 2026-02-18
+    ...i18nSchedule.en,
 
     // Navigation
     ...i18nNavigation.en,
@@ -116,6 +120,9 @@ export const translations = {
 
     // Buy DMS -> Agregado el 2026-02-11
     ...i18nBuy.es,
+
+    // Schedule -> Agregado el 2026-02-18
+    ...i18nSchedule.es,
 
     // Navigation
     ...i18nNavigation.es,

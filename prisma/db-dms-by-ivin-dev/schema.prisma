@@ -49,6 +49,7 @@ model ScheduleDate {
   lastName       String
   email          String
   phoneNumber    String
+  country        String
   state          String
   city           String
   zip            String

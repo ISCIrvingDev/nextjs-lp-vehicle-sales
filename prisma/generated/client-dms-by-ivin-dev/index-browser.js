@@ -150,6 +150,7 @@ exports.Prisma.ScheduleDateScalarFieldEnum = {
   lastName: 'lastName',
   email: 'email',
   phoneNumber: 'phoneNumber',
+  country: 'country',
   state: 'state',
   city: 'city',
   zip: 'zip',
