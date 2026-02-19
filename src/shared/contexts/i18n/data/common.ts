@@ -1,7 +1,7 @@
 export const i18nCommon = {
   en: {
     // ... claves existentes
-    systemTitle: "Ivin DMS",
+    systemTitle: "Dealer System",
     welcome: "Welcome",
     backToHome: "Back to Home",
     save: "Save",
@@ -34,7 +34,7 @@ export const i18nCommon = {
   },
   es: {
     // ... traducciones españolas
-    systemTitle: "Ivin DMS",
+    systemTitle: "Dealer System",
     welcome: "Bienvenido(a)",
     backToHome: "Volver al Inicio",
     save: "Guardar",

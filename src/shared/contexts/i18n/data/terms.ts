@@ -3,14 +3,14 @@ export const i18nTerms = {
     termsTitle: "Terms and Conditions",
     termsText1: "Last updated: 16/01/26",
     termsText2:
-      "By accessing or using the Ivin DMS system, you agree to comply with the following terms and conditions. If you do not agree to these terms, you may not use the system.",
+      "By accessing or using the Dealer System, you agree to comply with the following terms and conditions. If you do not agree to these terms, you may not use the system.",
     termsText3: "1. ACCEPTANCE OF TERMS",
     termsText4:
-      "These terms govern the use of the Ivin DMS System (the Software), owned or licensed by Jose Irving Salazar Rivas. By installing, activating, or using the Software, it is deemed that you have read, understood, and accepted these terms.",
+      "These terms govern the use of the Dealer System (the Software), owned or licensed by Jose Irving Salazar Rivas. By installing, activating, or using the Software, it is deemed that you have read, understood, and accepted these terms.",
     termsText5: "2. DATA AND CONFIDENTIALITY",
     termsText6: "Data storage:",
     termsText7:
-      "All information collected by the Ivin DMS System (sales, customers, settings, etc.) is stored exclusively on the user's computer or on the VPS hired by the client. Ivin Dev has no access or control over this data after installation, except in cases of explicitly authorized technical support.",
+      "All information collected by the Dealer System (sales, customers, settings, etc.) is stored exclusively on the user's computer or on the VPS hired by the client. Ivin Dev has no access or control over this data after installation, except in cases of explicitly authorized technical support.",
     termsText8: "Data collected by Ivin Dev:",
     termsText9: "Only the following is collected:",
     termsText10: "Payment information (payment method, service status).",
@@ -66,14 +66,14 @@ export const i18nTerms = {
     termsTitle: "Términos y Condiciones",
     termsText1: "Última actualización: 16/01/26",
     termsText2:
-      "Al acceder o utilizar el sistema Ivin DMS, acepta cumplir con los siguientes términos y condiciones. Si no acepta estos términos, no utilizará el sistema.",
+      "Al acceder o utilizar el sistema Dealer System, acepta cumplir con los siguientes términos y condiciones. Si no acepta estos términos, no utilizará el sistema.",
     termsText3: "1. ACEPTACIÓN DE LOS TÉRMINOS",
     termsText4:
-      "Estos términos regulan el uso del Sistema Ivin DMS (el Software), propiedad o licenciado por Jose Irving Salazar Rivas. Al instalar, activar o utilizar el Software, se considera que ha leído, entendido y aceptado estos términos.",
+      "Estos términos regulan el uso del sistema Dealer System (el Software), propiedad o licenciado por Jose Irving Salazar Rivas. Al instalar, activar o utilizar el Software, se considera que ha leído, entendido y aceptado estos términos.",
     termsText5: "2. DATOS Y CONFIDENCIALIDAD",
     termsText6: "Almacenamiento de datos:",
     termsText7:
-      "Toda la información recolectada por el Sistema Ivin DMS (ventas, clientes, configuraciones, etc.) se almacena únicamente en la computadora del usuario o en la VPS contratada por el cliente. Ivin Dev no tiene acceso ni control sobre estos datos después de la instalación, salvo en casos de soporte técnico explícitamente autorizado.",
+      "Toda la información recolectada por el sistema Dealer System (ventas, clientes, configuraciones, etc.) se almacena únicamente en la computadora del usuario o en la VPS contratada por el cliente. Ivin Dev no tiene acceso ni control sobre estos datos después de la instalación, salvo en casos de soporte técnico explícitamente autorizado.",
     termsText8: "Datos recolectados por Ivin Dev:",
     termsText9: "Únicamente se recopilan:",
     termsText10: "Información de pago (método de pago, estado del servicio).",

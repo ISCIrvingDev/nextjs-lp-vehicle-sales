@@ -2,7 +2,7 @@ export const i18nFaqs = {
   en: {
     // ... claves existentes
     faqsTitle: "Frequently Asked Questions",
-    faqsText1: "Find answers to common questions about Ivin DMS",
+    faqsText1: "Find answers to common questions about Dealer System",
     faqsText2: "Search FAQs...",
     faqsText3: "All Categories",
     faqsText4: "Getting Started",
@@ -11,12 +11,12 @@ export const i18nFaqs = {
     faqsText7: "Security & Privacy",
     faqsText8: "Features & Integrations",
     faqsText9: "Support & Help",
-    faqsText10: "How do I create an account on Ivin DMS?",
+    faqsText10: "How do I create an account on Dealer System?",
     faqsText11:
       'Creating an account is simple! Click the "Sign Up" button on our homepage, fill in your personal information including name, email, and create a secure password.',
-    faqsText12: "What are the system requirements for using Ivin DMS?",
+    faqsText12: "What are the system requirements for using Dealer System?",
     faqsText13: `
-    Ivin DMS is a web-based platform that works on any modern web browser (Chrome, Firefox, Safari, Edge). We recommend using the latest browser version for the best experience. A stable internet connection is required.\n\n
+    Dealer System is a web-based platform that works on any modern web browser (Chrome, Firefox, Safari, Edge). We recommend using the latest browser version for the best experience. A stable internet connection is required.\n\n
     For the desktop version:\n
     OS: Windows 10 or higher (support for 32-bit (x86), 64-bit (amd64), and ARM64)\n
     CPU: An SSE2 compatible processor (Intel Pentium 4 or later)\n
@@ -55,9 +55,9 @@ export const i18nFaqs = {
     faqsText32:
       "Yes, you have full control over your data. You can export all your vehicle inventory, customer information, and sales reports at any time in CSV or PDF format. This ensures you always have access to your business data, even if you decide to leave our platform.",
     faqsText33:
-      "In which languages can I purchase the Ivin DMS (Dealer Management System)?",
+      "In which languages can I purchase the Dealer System (Dealer Management System)?",
     faqsText34: "The system is currently available in English and Spanish.",
-    faqsText35: "Can I integrate Ivin DMS with other software?",
+    faqsText35: "Can I integrate Dealer System with other software?",
     faqsText36:
       "Yes, additional integrations can be added based on customer feedback. Please contact us for more information.",
     faqsText37: "What kind of customer support do you offer?",
@@ -76,7 +76,8 @@ export const i18nFaqs = {
   es: {
     // ... traducciones españolas
     faqsTitle: "Preguntas Frecuentes",
-    faqsText1: "Encuentre respuestas a preguntas frecuentes sobre Ivin DMS",
+    faqsText1:
+      "Encuentre respuestas a preguntas frecuentes sobre Dealer System",
     faqsText2: "Buscar preguntas frecuentes...",
     faqsText3: "Todas las Categorías",
     faqsText4: "Primeros Pasos",
@@ -85,13 +86,13 @@ export const i18nFaqs = {
     faqsText7: "Seguridad y Privacidad",
     faqsText8: "Características e Integraciones",
     faqsText9: "Asistencia & Ayuda",
-    faqsText10: "¿Cómo puedo crear una cuenta en Ivin DMS?",
+    faqsText10: "¿Cómo puedo crear una cuenta en Dealer System?",
     faqsText11:
       '¡Crear una cuenta es muy sencillo! Haz clic en el botón "Registrarse" de nuestra página de inicio, rellena tus datos personales, incluyendo tu nombre y correo electrónico, y crea una contraseña segura.',
     faqsText12:
-      "¿Cuáles son los requisitos del sistema para utilizar Ivin DMS?",
+      "¿Cuáles son los requisitos del sistema para utilizar Dealer System?",
     faqsText13: `
-    Ivin DMS es una plataforma basada en web que funciona en cualquier navegador moderno (Chrome, Firefox, Safari, Edge). Recomendamos utilizar la última versión del navegador para disfrutar de la mejor experiencia. Se requiere una conexión a Internet estable.\n\n
+    Dealer System es una plataforma basada en web que funciona en cualquier navegador moderno (Chrome, Firefox, Safari, Edge). Recomendamos utilizar la última versión del navegador para disfrutar de la mejor experiencia. Se requiere una conexión a Internet estable.\n\n
     Para la versión de escritorio:\n
     OS: Windows 10 o superior (soporte para 32-bit (x86), 64-bit (amd64), y ARM64)\n
     CPU: Un procesador compatible con SSE2 (Intel Pentium 4 o superior)\n
@@ -130,9 +131,9 @@ export const i18nFaqs = {
     faqsText32:
       "Sí, usted tiene control total sobre sus datos. Puede exportar todo su inventario de vehículos, información de clientes e informes de ventas en cualquier momento en formato CSV o PDF. Esto le garantiza que siempre tendrá acceso a los datos de su negocio, incluso si decide abandonar nuestra plataforma.",
     faqsText33:
-      "En que idiomas puedo adquirir el sistema Ivin DMS (Dealer Management System)",
+      "En que idiomas puedo adquirir el sistema Dealer System (Dealer Management System)",
     faqsText34: "Actualmente el sistema esta disponible en Ingles y Español.",
-    faqsText35: "¿Puedo integrar Ivin DMS con otro software?",
+    faqsText35: "¿Puedo integrar Dealer System con otro software?",
     faqsText36:
       "Si, se pueden añadir integraciones adicionales basadas en los comentarios del cliente. Puede ponerse en contacto con nostros para mayor informacion.",
     faqsText37: "¿Qué tipo de servicio de atención al cliente ofrecen?",

@@ -50,7 +50,7 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 fade-in">
-            {t('welcome')}
+            {t('landingPageWelcome')}
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto fade-in">
             {t('landingPageText1')}

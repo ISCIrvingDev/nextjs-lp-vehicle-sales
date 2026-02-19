@@ -17,7 +17,7 @@ export const i18nAbout = {
       "To become the global leader in vehicle sales management software, empowering automotive businesses of all sizes to thrive in the digital age.",
     aboutText10: "About the Developer",
     aboutText11:
-      "Meet the mind behind Ivin DMS - a seasoned software engineer with experience in developing innovative solutions.",
+      "Meet the mind behind Dealer System - a seasoned software engineer with experience in developing innovative solutions.",
     aboutText12: "Expertise & Skills",
     aboutText13: "Technical Excellence",
     aboutText14: "Full-stack development with modern frameworks",
@@ -40,7 +40,7 @@ export const i18nAbout = {
       "Passionate about leveraging artificial intelligence to solve real-world automotive challenges. Specializing in creating user-friendly interfaces that make complex technology accessible to everyone, from small dealerships to large enterprises.",
     aboutText29: "Built with Modern Technology",
     aboutText30:
-      "Ivin DMS is built on cutting-edge technology to ensure reliability, security, and performance.",
+      "Dealer System is built on cutting-edge technology to ensure reliability, security, and performance.",
     aboutText31: "Frontend",
     aboutText32: "Next.js, React, TypeScript, Tailwind CSS",
     aboutText33: "Backend",
@@ -68,7 +68,7 @@ export const i18nAbout = {
       "We're always learning, growing, and improving to stay ahead of industry trends.",
     aboutText50: "Ready to Transform Your Business?",
     aboutText51:
-      "Join hundreds of satisfied dealerships that have already transformed their operations with Ivin DMS.",
+      "Join hundreds of satisfied dealerships that have already transformed their operations with Dealer System.",
     aboutText52: "Get Started Today",
     aboutText53: "Contact Us",
     // ... más claves
@@ -91,7 +91,7 @@ export const i18nAbout = {
       "Convertirnos en el líder mundial en software de gestión de ventas de vehículos, empoderando a las empresas automotrices de todos los tamaños para que prosperen en la era digital.",
     aboutText10: "Acerca del Desarrollador",
     aboutText11:
-      "Conozca a la mente detrás de Ivin DMS - un experimentado ingeniero de software con experiencia en el desarrollo de soluciones innovadoras.",
+      "Conozca a la mente detrás de Dealer System - un experimentado ingeniero de software con experiencia en el desarrollo de soluciones innovadoras.",
     aboutText12: "Experiencia y Habilidades",
     aboutText13: "Excelencia Técnica",
     aboutText14: "Desarrollo full-stack con marcos modernos",
@@ -115,7 +115,7 @@ export const i18nAbout = {
       "Apasionado por aprovechar la inteligencia artificial para resolver retos automovilísticos del mundo real. Especializado en crear interfaces fáciles de usar que hacen que la tecnología compleja sea accesible para todos, desde pequeños concesionarios hasta grandes empresas.",
     aboutText29: "Construido con Tecnología Moderna",
     aboutText30:
-      "Ivin DMS se basa en tecnología de vanguardia para garantizar fiabilidad, seguridad y rendimiento.",
+      "Dealer System se basa en tecnología de vanguardia para garantizar fiabilidad, seguridad y rendimiento.",
     aboutText31: "Frontend",
     aboutText32: "Next.js, React, TypeScript, Tailwind CSS",
     aboutText33: "Backend",
@@ -143,7 +143,7 @@ export const i18nAbout = {
       "Siempre estamos aprendiendo, creciendo y mejorando para estar a la vanguardia de las tendencias del sector.",
     aboutText50: "¿Listo para Transformar Tu Negocio?",
     aboutText51:
-      "Únase a cientos de concesionarios satisfechos que ya han transformado sus operaciones con Ivin DMS.",
+      "Únase a cientos de concesionarios satisfechos que ya han transformado sus operaciones con Dealer System.",
     aboutText52: "Empieza Hoy Mismo",
     aboutText53: "Contáctenos",
     // ... más traducciones

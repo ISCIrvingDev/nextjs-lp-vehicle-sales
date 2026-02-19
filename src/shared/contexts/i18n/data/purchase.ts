@@ -4,7 +4,7 @@ export const i18nPurchase = {
     purchaseSuccessMessage:
       "Thank you for your purchase! Your transaction has been completed successfully.",
     thankYouMessage:
-      "We will contact you shortly to schedule a video call and begin the installation process of the Ivin DMS System on your VPS.",
+      "We will contact you shortly to schedule a video call and begin the installation process of the Dealer System on your VPS.",
     paymentDetails: "Payment Details",
     paymentReference: "Payment Reference",
     paymentAmount: "Amount Paid",
@@ -23,7 +23,7 @@ export const i18nPurchase = {
     purchaseSuccessMessage:
       "¡Gracias por tu compra! Tu transacción ha sido completada exitosamente.",
     thankYouMessage:
-      "Nos pondremos en contacto contigo a la brevedad posible para agendar una videollamada y comenzar con el proceso de instalación del Sistema Ivin DMS en tu VPS.",
+      "Nos pondremos en contacto contigo a la brevedad posible para agendar una videollamada y comenzar con el proceso de instalación de Dealer System en tu VPS.",
     paymentDetails: "Detalles del Pago",
     paymentReference: "Referencia de Pago",
     paymentAmount: "Monto Pagado",

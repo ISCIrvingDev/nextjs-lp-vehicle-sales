@@ -1,7 +1,7 @@
 export const i18nLandingPage = {
   en: {
     // ... claves existentes
-    welcome: "Welcome to Ivin DMS",
+    landingPageWelcome: "Welcome to Dealer System",
     landingPageText1:
       "Complete vehicle sales management system with inventory tracking, customer management, and financial reporting.",
     landingPageText2: "Get Started",
@@ -18,7 +18,7 @@ export const i18nLandingPage = {
     landingPageText10: "Financial Reports",
     landingPageText11:
       "Comprehensive earnings reports with date filtering and export capabilities.",
-    landingPageText12: "Why Choose Ivin DMS?",
+    landingPageText12: "Why Choose Dealer System?",
     landingPageText13: "Modern Interface",
     landingPageText14: "Beautiful dark theme design.",
     landingPageText15: "Secure Authentication",
@@ -33,7 +33,7 @@ export const i18nLandingPage = {
     landingPageText24: "RESTful",
     landingPageText25: "What Our Users Say",
     landingPageText26:
-      "Ivin DMS has transformed how we manage our dealership. The interface is intuitive and the features are exactly what we needed.",
+      "Dealer System has transformed how we manage our dealership. The interface is intuitive and the features are exactly what we needed.",
     landingPageText27: "Car Dealership Owner",
     landingPageText28:
       "The financial reporting features are incredible. I can track earnings and generate reports in seconds. Highly recommended!",
@@ -43,13 +43,13 @@ export const i18nLandingPage = {
     landingPageText31: "Business Owner",
     landingPageText32: "Ready to Transform Your Business?",
     landingPageText33:
-      "Join hundreds of satisfied dealerships using Ivin DMS to manage their inventory and grow their business.",
+      "Join hundreds of satisfied dealerships using Dealer System to manage their inventory and grow their business.",
     landingPageText34: "Get Started Today",
     // ... más claves
   },
   es: {
     // ... traducciones españolas
-    welcome: "Bienvenido a Ivin DMS",
+    landingPageWelcome: "Bienvenido a Dealer System",
     landingPageText1:
       "Sistema completo de gestión de ventas de vehículos con seguimiento de inventario, gestión de clientes e informes financieros.",
     landingPageText2: "Comenzar",
@@ -66,7 +66,7 @@ export const i18nLandingPage = {
     landingPageText10: "Informes Financieros",
     landingPageText11:
       "Informes de ingresos completos con filtros por fecha y funciones de exportación.",
-    landingPageText12: "¿Por qué elegir Ivin DMS?",
+    landingPageText12: "¿Por qué elegir Dealer System?",
     landingPageText13: "Interfaz Moderna",
     landingPageText14: "Hermoso diseño con tema oscuro.",
     landingPageText15: "Autenticación segura",
@@ -82,7 +82,7 @@ export const i18nLandingPage = {
     landingPageText24: "RESTful",
     landingPageText25: "Lo Que Dicen Nuestros Usuarios",
     landingPageText26:
-      "Ivin DMS ha transformado la forma en que gestionamos nuestro concesionario. La interfaz es intuitiva y las funciones son exactamente lo que necesitábamos.",
+      "Dealer System ha transformado la forma en que gestionamos nuestro concesionario. La interfaz es intuitiva y las funciones son exactamente lo que necesitábamos.",
     landingPageText27: "Propietario de Concesionario de Automóviles",
     landingPageText28:
       "Las funciones de informes financieros son increíbles. Puedo realizar un seguimiento de las ganancias y generar informes en cuestión de segundos. ¡Muy recomendable!",
@@ -92,7 +92,7 @@ export const i18nLandingPage = {
     landingPageText31: "Propietario de Negocio",
     landingPageText32: "¿Listo para Transformar tu Negocio?",
     landingPageText33:
-      "Únase a cientos de concesionarios satisfechos que utilizan Ivin DMS para gestionar su inventario y hacer crecer su negocio.",
+      "Únase a cientos de concesionarios satisfechos que utilizan Dealer System para gestionar su inventario y hacer crecer su negocio.",
     landingPageText34: "Empieza hoy mismo",
     // ... más traducciones
   },

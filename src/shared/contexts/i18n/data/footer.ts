@@ -9,7 +9,7 @@ export const i18nFooter = {
     faqs: "FAQs",
     footerCompany: "Company",
     about: "About",
-    copyright: "© 2026 Ivin DMS. All rights reserved.",
+    copyright: "© 2026 Dealer System. All rights reserved.",
     footerDeveloped: "Developed by",
     // ... más claves
   },
@@ -23,7 +23,7 @@ export const i18nFooter = {
     faqs: "Preguntas Frecuentes",
     footerCompany: "Compañía",
     about: "Acerca de",
-    copyright: "© 2026 Ivin DMS. Todos los derechos reservados.",
+    copyright: "© 2026 Dealer System. Todos los derechos reservados.",
     footerDeveloped: "Desarrollado por",
     // ... más traducciones
   },
