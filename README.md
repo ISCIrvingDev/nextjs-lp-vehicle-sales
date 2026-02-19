@@ -7,6 +7,9 @@
 NODE_ENV="development" # development|production
 NEXT_PUBLIC_IS_DEMO="true" # false|true
 
+## Nixpacks
+NIXPACKS_INSTALL_CMD="npm i && npm run db:generate" # Para generar el esquema de Prisma
+
 # Google Analytics & Google Tag Manager
 # GOOGLE_ANALYTICS_ID="CODIGO-ID"
 GOOGLE_TAG_MANAGER_ID="CODIGO-ID"
