@@ -29,7 +29,6 @@
 
 // * Contexts
 import { useI18n } from "@/shared/contexts/i18n/I18nContext";
-import { useAuth } from "@/shared/contexts/AuthContext";
 
 // * Services
 // xxx

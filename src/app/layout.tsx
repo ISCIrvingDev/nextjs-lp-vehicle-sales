@@ -14,7 +14,6 @@ import { Toaster } from "@/shared/components/ui/toaster";
 
 // * Contexts
 import { I18nProvider } from "@/shared/contexts/i18n/I18nContext";
-import { AuthProvider } from "@/shared/contexts/AuthContext";
 import { PreventRefreshGuard } from "@/shared/guards/PreventRefreshGuard";
 
 const inter = Inter({
@@ -45,13 +44,11 @@ export default function RootLayout({
         className={`${inter.variable} font-sans antialiased bg-background text-foreground`}
       >
         <I18nProvider>
-          <AuthProvider>
-            {children}
+          {children}
 
-            <Toaster />
+          <Toaster />
 
-            <PreventRefreshGuard />
-          </AuthProvider>
+          <PreventRefreshGuard />
 
           {/* Footer */}
           <Footer />
