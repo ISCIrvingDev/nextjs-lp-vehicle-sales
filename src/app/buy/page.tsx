@@ -9,6 +9,9 @@ import { Card, CardContent } from '@/shared/components/ui/card';
 import { Badge } from '@/shared/components/ui/badge';
 import { LandingPageHeader } from '@/app/_components/landing-page-header';
 
+// * Google Analytics & Google Tag Manager
+import { sendGTMEvent } from "@next/third-parties/google";
+
 // * Icons
 import {
   Check,
@@ -103,7 +106,10 @@ export default function BuyDmsPage() {
           <div className="space-y-6">
             <Card
               className="bg-card border-border shadow-lg overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-2xl hover:border-primary/50"
-              onClick={handlePurchase}
+              onClick={() => {
+                handlePurchase()
+                sendGTMEvent({ event: '/buy - Get Your DMS System', cta_type: 'Card' })
+              }}
             >
               <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-8">
                 <div className="flex items-center gap-2 mb-4">
@@ -152,7 +158,10 @@ export default function BuyDmsPage() {
                   size="lg"
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg py-6"
                   disabled={isLoading}
-                  onClick={handlePurchase}
+                  onClick={() => {
+                    handlePurchase()
+                    sendGTMEvent({ event: '/buy - Get Your DMS System - Buy Now', cta_type: 'Btn' })
+                  }}
                 >
                   {isLoading ? (
                     <>

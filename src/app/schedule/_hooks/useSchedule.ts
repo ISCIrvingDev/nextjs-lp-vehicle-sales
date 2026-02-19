@@ -10,6 +10,9 @@ import {
   initialFormData,
 } from "./_models/schedule";
 
+// * Google Analytics & Google Tag Manager
+import { sendGTMEvent } from "@next/third-parties/google";
+
 export function useSchedule() {
   const { t } = useI18n();
   const { toast } = useToast();
@@ -94,6 +97,11 @@ export function useSchedule() {
         zip: formData.zip.trim(),
         message: formData.message.trim() || undefined,
       };
+
+      sendGTMEvent({
+        event: "/schedule - Schedule a Demo - Schedule a Demo",
+        cta_type: "Btn",
+      });
 
       const result = await createScheduleDate(data);
 
