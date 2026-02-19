@@ -324,7 +324,7 @@ export default function About() {
             {t('aboutText51')}
           </p>
           <div className="flex gap-4 justify-center">
-            <Link href="/signup" onClick={() => {
+            <Link href="/schedule" onClick={() => {
               if (process.env.NEXT_PUBLIC_IS_DEMO === 'true')
                 sendGTMEvent({ event: '/about - Ready to Transform Your Business? - Get Started Today', cta_type: 'Link & Btn' })
             }}>

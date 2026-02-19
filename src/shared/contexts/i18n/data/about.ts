@@ -69,7 +69,7 @@ export const i18nAbout = {
     aboutText50: "Ready to Transform Your Business?",
     aboutText51:
       "Join hundreds of satisfied dealerships that have already transformed their operations with Dealer System.",
-    aboutText52: "Get Started Today",
+    aboutText52: "Schedule a Demo",
     aboutText53: "Contact Us",
     // ... más claves
   },
@@ -144,7 +144,7 @@ export const i18nAbout = {
     aboutText50: "¿Listo para Transformar Tu Negocio?",
     aboutText51:
       "Únase a cientos de concesionarios satisfechos que ya han transformado sus operaciones con Dealer System.",
-    aboutText52: "Empieza Hoy Mismo",
+    aboutText52: "Agende una Demo",
     aboutText53: "Contáctenos",
     // ... más traducciones
   },
