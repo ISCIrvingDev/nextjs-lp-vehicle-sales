@@ -22,15 +22,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Vehicle Sales - Professional Vehicle Management System",
-  description: "Complete vehicle sales management system with inventory tracking, customer management, financial reporting and authentication.",
-  keywords: ["vehicle sales", "car dealership", "inventory management", "customer management", "automotive"],
-  authors: [{ name: "Irving salazar" }, { name: "Ivin Dev" }],
-  openGraph: {
-    title: "Vehicle Sales Management System",
-    description: "Professional vehicle sales and inventory management platform",
-    type: "website",
+  title: "Dealer Management System | Dealer System | Auto Dealer System",
+  description: "Complete vehicle sales management system with inventory tracking, customer management, point of sales, layaway management, financial reporting and authentication.",
+  // keywords: ["vehicle sales", "car dealership", "inventory management", "customer management", "automotive"],
+  authors: [{ name: "Irving salazar", url: 'https://ivin-dev.com/' }, { name: "Ivin Dev", url: 'https://ivin-dev.com/' }],
+  metadataBase: new URL('https://dealer-system.com'), // Next will use this to make complete URLs from relative paths.
+  // metadataBase: new URL('http://localhost:3000'), // Para pruebas de SEO en local
+  alternates: {
+    canonical: '/'
   },
+  // openGraph: {
+  //   title: "Vehicle Sales Management System",
+  //   description: "Professional vehicle sales and inventory management platform",
+  //   type: "website",
+  // },
 };
 
 export default function RootLayout({
